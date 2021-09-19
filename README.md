@@ -3,5 +3,3 @@
 ## Contents
 
 - tmux config
-
-## How to use
