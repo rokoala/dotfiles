@@ -56,6 +56,12 @@ au BufNewFile,BufRead *.tsx setf typescriptreact
 au BufNewFile,BufRead *.md set filetype=markdown
 " Flow
 au BufNewFile,BufRead *.flow set filetype=javascript
+" Vagrant
+augroup VagrantFt
+  autocmd!
+
+  autocmd BufWinEnter,BufNewFile Vagrantfile setf ruby
+augroup END
 
 set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
 
