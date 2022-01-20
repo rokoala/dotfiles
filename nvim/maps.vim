@@ -1,3 +1,5 @@
+let mapleader=" "
+nnoremap <SPACE> <Nop>
 " Increment and decrement
 nnoremap + <C-a>
 nnoremap - <C-x>
@@ -13,7 +15,7 @@ nmap <C-a> gg<S-v>G
 " Open current directory
 nmap te :tabedit 
 nmap <S-Tab> :tabprev<Return>
-nmap <Tab> :tabnext<Return>
+"nmap <Tab> :tabnext<Return>
 
 "------------------------------
 "-----------------------------
@@ -39,7 +41,16 @@ nmap <C-w><up> <C-w>+
 nmap <C-w><down> <C-w>--
 
 " telescope functions
-nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files({ hidden = true, file_ignore_patterns = { "node%_modules/.*", ".git/.*" }})<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+" nerdtree 
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <leader>, :NERDTreeFind<CR>
+
+nnoremap <C-L> :noh<CR><C-L>
+
+let NERDTreeShowHidden=1

@@ -6,6 +6,7 @@ endif
 lua << EOF
 local nvim_lsp = require('lspconfig')
 local protocol = require'vim.lsp.protocol'
+local null_ls = require("null-ls")
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -62,5 +63,14 @@ for _, lsp in ipairs(servers) do
     }
   }
 end
+
+null_ls.setup({
+    sources = {
+        null_ls.builtins.diagnostics.eslint_d,
+        null_ls.builtins.code_actions.eslint_d,
+        null_ls.builtins.formatting.prettier,
+    },
+    on_attach = on_attach,
+})
 
 EOF
