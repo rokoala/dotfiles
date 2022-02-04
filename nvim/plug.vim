@@ -22,6 +22,7 @@ if has('nvim')
   Plug 'ryanoasis/vim-devicons'
   Plug 'jose-elias-alvarez/null-ls.nvim'
   Plug 'L3MON4D3/LuaSnip'
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 endif
 
 call plug#end()
