@@ -54,7 +54,7 @@ end
 --  vim.lsp.protocol.make_client_capabilities()
 --)
 
-local servers = { 'tsserver', 'pylsp' }
+local servers = { 'tsserver', 'pylsp', 'denols' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
