@@ -9,7 +9,7 @@ Plug 'morhetz/gruvbox'
 
 if has('nvim')
   Plug 'neovim/nvim-lspconfig'
-  Plug 'tami5/lspsaga.nvim', { 'branch': 'nvim51' }
+  Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
   Plug 'windwp/nvim-autopairs'
   Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
   Plug 'hrsh7th/cmp-nvim-lsp'
