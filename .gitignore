@@ -1,4 +1,5 @@
 fish/private_functions/*
 fish/fisher/*
 fish/fish_variables
+fish/fishd.tmp.*
 .DS_Store
