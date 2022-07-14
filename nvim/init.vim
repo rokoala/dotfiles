@@ -86,3 +86,5 @@ colorscheme gruvbox
 set background=dark
 
 " vim: set foldmethod=marker foldlevel=0:
+
+let g:markdown_fenced_languages = ['ts=typescript']
