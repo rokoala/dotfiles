@@ -54,7 +54,7 @@ end
 --  vim.lsp.protocol.make_client_capabilities()
 --)
 
-local servers = { 'tsserver', 'pylsp', 'denols' }
+local servers = { 'tsserver', 'pylsp'}
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
@@ -66,8 +66,8 @@ end
 
 null_ls.setup({
     sources = {
-        null_ls.builtins.diagnostics.eslint_d,
-        null_ls.builtins.code_actions.eslint_d,
+        null_ls.builtins.diagnostics.eslint,
+        null_ls.builtins.code_actions.eslint,
         null_ls.builtins.formatting.prettier,
     },
     on_attach = on_attach,
