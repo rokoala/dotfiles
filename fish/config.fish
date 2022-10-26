@@ -24,3 +24,7 @@ set -U PROJECT_HOME $HOME/Devel
 
 # GO configs
 set -U GOPATH $HOME/go
+
+# Ruby rbenv
+set PATH $HOME/.rbenv/bin $PATH
+set PATH $HOME/.rbenv/shims $PATH
