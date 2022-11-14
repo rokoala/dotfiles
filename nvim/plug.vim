@@ -24,6 +24,7 @@ if has('nvim')
   Plug 'L3MON4D3/LuaSnip'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
   Plug 'vimwiki/vimwiki'
+  Plug 'numToStr/Comment.nvim'
 endif
 
 call plug#end()
