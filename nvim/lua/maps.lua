@@ -54,3 +54,11 @@ nmap("<leader>ff","<cmd>lua require('telescope.builtin').find_files({ hidden = t
 nmap("<leader>fg","<cmd>lua require('telescope.builtin').live_grep()<cr>")
 nmap("<leader>fb","<cmd>lua require('telescope.builtin').buffers()<cr>")
 nmap("<leader>fh","<cmd>lua require('telescope.builtin').help_tags()<cr>")
+
+-- lspsaga commands
+nmap("<C-j>","<cmd>Lspsaga diagnostic_jump_next<CR>")
+nmap("K","<cmd>Lspsaga hover_doc<CR>")
+nmap("<C-k>","<cmd>Lspsaga signature_help<CR>")
+nmap("gh","<cmd>Lspsaga lsp_finder<CR>")
+nmap("gd","<cmd>Lspsaga preview_definition<CR>")
+nmap("<leader>ca","<cmd>Lspsaga code_action<CR>")
