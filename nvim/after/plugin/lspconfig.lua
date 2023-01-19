@@ -1,9 +1,3 @@
-if !exists('g:lspconfig')
-  finish
-endif
-
-" lspconfig keybindings and completion
-lua << EOF
 local nvim_lsp = require('lspconfig')
 local protocol = require'vim.lsp.protocol'
 local null_ls = require("null-ls")
@@ -46,12 +40,8 @@ local on_attach = function(client, bufnr)
           group = augroup,
           buffer = bufnr,
           callback = function()
-              -- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
               vim.lsp.buf.format({
-                bufnr = bufnr,
-                filter = function(client)
-                  return client.name == "null-ls"
-                end
+                bufnr = bufnr
               })
           end,
       })
@@ -84,5 +74,3 @@ null_ls.setup({
     },
     on_attach = on_attach,
 })
-
-EOF
