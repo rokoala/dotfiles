@@ -14,7 +14,7 @@ return {
           'pylsp',
           'gopls',
           'tailwindcss',
-          'sumneko_lua'
+          'lua_ls'
         }
       })
     end
