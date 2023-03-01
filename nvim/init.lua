@@ -11,6 +11,12 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.cmd [[
+  augroup typescriptcheck
+    autocmd FileType typescript,typescriptreact compiler tsc | setlocal makeprg=npx\ tsc
+  augroup END
+]]
+
 -- configure maps
 require('maps')
 
@@ -22,7 +28,7 @@ set.fileencodings = "utf-8"
 set.encoding = "utf-8"
 set.title = true
 set.autoindent = true
-set.background = dark
+set.background = "dark"
 set.backup = false
 set.hlsearch = true
 set.showcmd = true
@@ -30,9 +36,9 @@ set.cmdheight = 1
 set.laststatus = 2
 set.scrolloff = 10
 set.expandtab = true
-set.shell = fish
+set.shell = "fish"
 set.backupskip = "/tmp/*,/private/tmp/*"
-set.inccommand = split
+set.inccommand = "split"
 --set.t_BE=true
 set.sc = false
 set.ru = false
