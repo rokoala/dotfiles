@@ -20,9 +20,9 @@ nmap("dw", 'vb"_d')
 
 -- Tabs
 -- Open current directory
-nmap("te", ":tabedit<Return>")
-nmap("<S-Tab>", ":tabprev<Return>")
-nmap("<Tab>", ":tabnext<Return>")
+--nmap("te", ":tabedit<Return>")
+--nmap("<S-Tab>", ":tabprev<Return>")
+--nmap("<Tab>", ":tabnext<Return>")
 
 -- Split the windows
 nmap("ss", ":split<Return><C-w>w")
@@ -45,9 +45,6 @@ nmap("<C-w><C-j>", "<C-w>--")
 nmap("<leader>n", ":NERDTreeFocus<CR>")
 nmap("<C-b>", ":NERDTreeToggle<CR>")
 nmap("<leader>,", ":NERDTreeFind<CR>")
-
--- noh
-nmap("<C-L>", ":noh<CR><C-L>")
 
 -- telescope commands
 nmap("<leader>ff",
