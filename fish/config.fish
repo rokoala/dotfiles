@@ -28,3 +28,6 @@ set -U GOPATH $HOME/go
 # Ruby rbenv
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
+
+# ruby homebrew gems
+set PATH /opt/homebrew/lib/ruby/gems/3.2.0/bin $PATH

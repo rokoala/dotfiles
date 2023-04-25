@@ -17,6 +17,39 @@ vim.cmd [[
   augroup END
 ]]
 
+vim.g.vimwiki_list = {
+  {
+    path = '~/vimwiki',
+    syntax = 'markdown',
+    ext = '.md',
+    auto_generate_tags = 1,
+    auto_generated_links = 1,
+    template_path = '~/vimwiki/templates/',
+    template_default = 'default',
+    path_html = '~/vimwiki/site_html/',
+    custom_wiki2html = 'vimwiki_markdown',
+    html_file_parameterization = 1,
+    template_ext = '.tpl',
+    auto_toc = 1,
+    auto_export = 1,
+  },
+  {
+    path = '~/vimwiki-work',
+    syntax = 'markdown',
+    ext = '.md',
+    auto_generate_tags = 1,
+    auto_generated_links = 1,
+    template_path = '~/vimwiki-work/templates/',
+    template_default = 'default',
+    path_html = '~/vimwiki-work/site_html/',
+    custom_wiki2html = 'vimwiki_markdown',
+    html_file_parameterization = 1,
+    template_ext = '.tpl',
+    auto_toc = 1,
+    auto_export = 1,
+  }
+}
+
 -- configure maps
 require('maps')
 
