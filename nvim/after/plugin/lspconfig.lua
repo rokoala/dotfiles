@@ -47,7 +47,6 @@ local on_attach = function(client, bufnr)
       end,
     })
   end
-
 end
 
 
@@ -55,7 +54,7 @@ end
 -- Set up completion using nvim_cmp with LSP source
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-local servers = { 'tsserver', 'tailwindcss', 'gopls', 'pylsp', 'bashls' }
+local servers = { 'tsserver', 'tailwindcss', 'gopls', 'pylsp', 'bashls', 'svelte' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,

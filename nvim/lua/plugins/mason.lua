@@ -14,7 +14,8 @@ return {
           'pylsp',
           'gopls',
           'tailwindcss',
-          'lua_ls'
+          'lua_ls',
+          'svelte'
         }
       })
     end
