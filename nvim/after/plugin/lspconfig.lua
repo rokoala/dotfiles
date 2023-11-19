@@ -54,7 +54,8 @@ end
 -- Set up completion using nvim_cmp with LSP source
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-local servers = { 'tsserver', 'tailwindcss', 'gopls', 'pylsp', 'bashls', 'svelte' }
+local servers = { 'tsserver', 'tailwindcss', 'gopls', 'pylsp', 'bashls', 'svelte', 'terraformls', 'jdtls', 'lemminx',
+  'html' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,

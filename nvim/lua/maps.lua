@@ -20,9 +20,9 @@ nmap("dw", 'vb"_d')
 
 -- Tabs
 -- Open current directory
---nmap("te", ":tabedit<Return>")
---nmap("<S-Tab>", ":tabprev<Return>")
---nmap("<Tab>", ":tabnext<Return>")
+nmap("te", ":tabedit<Return>")
+nmap("<S-Tab>", ":tabprev<Return>")
+nmap("<Tab>", ":tabnext<Return>")
 
 -- Split the windows
 nmap("ss", ":split<Return><C-w>w")

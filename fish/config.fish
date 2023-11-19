@@ -1,13 +1,13 @@
 set fish_greeting ""
 
 # Fish configs
-set -U fisher_path ~/.config/fish/fisher
+# set -U fisher_path ~/.config/fish/fisher
 set -U fish_private_functions ~/.config/fish/private_functions
 
 # Fisher functions
-for file in $fisher_path/conf.d/*.fish
-    source $file
-end
+# for file in $fisher_path/conf.d/*.fish
+#     source $file
+# end
 
 # private functions
 for file in $fish_private_functions/*.fish
@@ -33,3 +33,9 @@ set PATH $HOME/.rbenv/shims $PATH
 set PATH /opt/homebrew/lib/ruby/gems/3.2.0/bin $PATH
 # go bin
 set PATH $GOPATH/bin $PATH
+
+set -gx PATH /opt/homebrew/bin $PATH
+
+# java
+set -gx JAVA_HOME /opt/homebrew/Cellar/openjdk/20.0.1 
+set -gx PATH $JAVA_HOME/bin $PATH
