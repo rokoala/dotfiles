@@ -37,5 +37,8 @@ set PATH $GOPATH/bin $PATH
 set -gx PATH /opt/homebrew/bin $PATH
 
 # java
-set -gx JAVA_HOME /opt/homebrew/Cellar/openjdk/20.0.1 
+set -gx JAVA_HOME /opt/homebrew/Cellar/openjdk/20.0.1
 set -gx PATH $JAVA_HOME/bin $PATH
+
+# bob PATH
+set PATH $PATH $HOME/.local/share/bob/nvim-bin
