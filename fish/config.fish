@@ -19,3 +19,12 @@ if status is-interactive
     and type -q tmux
     exec tmux new-session -A -s main
 end
+
+fnm env --use-on-cd --shell fish | source
+
+# pnpm
+set -gx PNPM_HOME '/Users/rokoala/Library/pnpm'
+if test "$PATH[1]" != "$PNPM_HOME/bin"
+  set -gx PATH "$PNPM_HOME/bin" $PATH
+end
+# pnpm end
